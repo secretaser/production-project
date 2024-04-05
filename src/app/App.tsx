@@ -1,9 +1,10 @@
 import React from 'react'
 import './styles/index.scss'
-import { Route, Routes, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { UseTheme } from 'app/providers/ThemeProvider'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { AppRouter } from 'app/providers/router'
+import { Navbar } from 'widgets/Navbar'
 
 
 
@@ -12,11 +13,9 @@ const App = () => {
 
    return (
       <div className={classNames('app', {}, [theme])}>
-         <button onClick={toggleTheme}>Toggle</button>
-         {/* в курсе тут линк */}
-         <NavLink to={'/'}>Main Page</NavLink>
-         <NavLink to={'/about'}>About</NavLink>
+         <Navbar />
          <AppRouter />
+         <button onClick={toggleTheme}>Toggle</button>
       </div>
    )
 }
