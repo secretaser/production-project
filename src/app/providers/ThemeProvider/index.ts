@@ -4,7 +4,7 @@ import ThemeProvider from './ui/ThemeProvider'
 
 
 export {
-   ThemeProvider,
-   UseTheme,
-   Theme
+    ThemeProvider,
+    UseTheme,
+    Theme
 }
