@@ -60,7 +60,7 @@ export default [
             'no-underscore-dangle': 'off',
             'linebreak-style': [2, 'windows'],
             'i18next/no-literal-string': [2,
-                { markupOnly: true, ignoreAttribute: ['data-testid'] },
+                { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
             ],
             'max-len': ['error', { code: 100, ignoreComments: true }],
         },

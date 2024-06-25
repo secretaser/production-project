@@ -1,9 +1,12 @@
 {
+  "About": "About",
   "About page": "About page",
-  "Language": "Language",
+  "Language": "English",
+  "Main Page": "Main Page",
   "Main page": "Main page",
   "Page not found": "Page not found",
   "Refresh the page": "Refresh the page",
+  "Sidebar": "Sidebar",
   "Throw error": "Throw error",
   "Unexpected error occured": "Unexpected error occured"
 }
