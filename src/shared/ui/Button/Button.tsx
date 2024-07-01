@@ -35,7 +35,7 @@ export const Button: FC<ButtonProps> = (props) => {
         [s[theme]]: true,
         [s.square]: square,
         [s[size]]: true,
-    }
+    };
 
     return (
         <button
