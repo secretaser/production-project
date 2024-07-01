@@ -35,7 +35,8 @@ i18n
     .init({
         react: { useSuspense: false },
         fallbackLng: 'ru',
-        debug: false,
+        debug: true,
+        load: 'languageOnly',
 
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
@@ -44,6 +45,10 @@ i18n
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
+        keySeparator: false,
     });
 
 export default i18n;
+
+
+
