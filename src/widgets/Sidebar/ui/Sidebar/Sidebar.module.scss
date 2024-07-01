@@ -4,11 +4,25 @@
     background: var(--inverted-bg-color);
     position: relative;
     transition: width 0.3s;
-    overflow: hidden;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
+.items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+    white-space: nowrap;
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+    flex: 0 0 20px;
 }
 
 .switchers {
@@ -20,4 +34,24 @@
     width: 100%;
 }
 
-// .lang {}
+.collapseBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(100%, -100%);
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link {
+        opacity: 0;
+        transition: all 0.3s;
+        width: 0;
+    }
+}
