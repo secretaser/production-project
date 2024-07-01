@@ -58,7 +58,7 @@ export default [
             'import/extensions': 'off',
             'import/no-extraneous-dependencies': 'off',
             'no-underscore-dangle': 'off',
-            'linebreak-style': [2, 'windows'],
+            // 'linebreak-style': [2, 'windows'],
             'i18next/no-literal-string': [2,
                 { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
             ],
