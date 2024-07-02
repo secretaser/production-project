@@ -41,6 +41,7 @@ export default [
             'react',
             // '@typescript-eslint',
             'i18next',
+            'react-hooks',
         ],
         rules: {
             'react/jsx-indent': [2, 4],
@@ -63,18 +64,26 @@ export default [
                 { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
             ],
             'max-len': ['error', { code: 100, ignoreComments: true }],
+
+            'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+            'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+
+            // overwritten recommended rules
             '@typescript-eslint/no-unused-vars': 'off',
             'no-param-reassign': 'off',
             '@typescript-eslint/no-explicit-any': 'off',
+            'jsx-a11y/click-events-have-key-events': 'off',
+            'jsx-a11y/no-static-element-interactions': 'off',
         },
         globals: {
             __IS_DEV__: true,
         },
         overrides: [
             {
-                files: ['**/src/**/*.test.{ts,tsx}'],
+                files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
                 rules: {
                     'i18next/no-literal-string': 'off',
+                    'max-len': 'off',
                 },
             },
         ],
