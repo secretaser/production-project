@@ -10,5 +10,7 @@
   "Throw error": "Throw error",
   "About": "About",
   "Sidebar": "Sidebar",
-  "Log in": "Log in"
+  "Log in": "Log in",
+  "Decrement": "Decrement",
+  "Increment": "Increment"
 }
