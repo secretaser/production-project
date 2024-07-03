@@ -10,7 +10,7 @@ const App = () => {
 
     // в 29 уроке тут был ужас с таймаутом для анимации закрытия окна. тут сделано через css
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <div className={classNames('app', {}, [])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
